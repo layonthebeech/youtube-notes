@@ -1,0 +1,23 @@
+{
+  "name": "Youtube Notes",
+  "version": "1.0",
+  "description": "Take screenshots of youtube videos and annotate them",
+  "background": {
+    "persistent": false,
+    "scripts": ["dist/popup/index_bundle.js","dist/session/index_bundle.js"]
+  },
+  "icons": {
+    "128": "pencil.png"
+  },
+  "browser_action": {
+    "default_icon": "pencil.png",
+    "default_title": "Studying on youtube has never been easier!",
+    "default_popup": "dist/popup/index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self' https://unpkg.com/react-dom@15/dist/react-dom.min.js https://unpkg.com/react@15/dist/react.min.js https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflcGItZc/www-widgetapi.js; object-src 'self'",
+  "manifest_version": 2
+}
