@@ -16,7 +16,8 @@
   },
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "<all_urls>"
   ],
   "content_security_policy": "script-src 'self' https://unpkg.com/react-dom@15/dist/react-dom.min.js https://unpkg.com/react@15/dist/react.min.js https://www.youtube.com/iframe_api https://s.ytimg.com/yts/jsbin/www-widgetapi-vflcGItZc/www-widgetapi.js; object-src 'self'",
   "manifest_version": 2
